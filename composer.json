@@ -1,0 +1,41 @@
+{
+    "name": "dne/body-classes",
+    "description": "Adds theme and sales channel specific classes to body tag",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~v6.3.0"
+    },
+    "authors": [
+        {
+            "name": "David Neustadt"
+        }
+    ],
+    "extra": {
+        "shopware-plugin-class": "Dne\\BodyClasses\\DneBodyClasses",
+        "copyright": "(c) David Neustadt",
+        "label": {
+            "de-DE": "Erweiterte Body-Klassen",
+            "en-GB": "Extended body classes"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Dne\\BodyClasses\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dne\\BodyClasses\\Test\\": "tests/"
+        }
+    },
+    "suggest": {
+        "shopware/storefront": "Require '6.3'.",
+        "shopware/administration": "Require '6.3'. Allows you to to set up the plugin easily"
+    },
+    "conflict": {
+        "shopware/storefront": "<6,>=7",
+        "shopware/administration": "<6,>=7"
+    }
+}
